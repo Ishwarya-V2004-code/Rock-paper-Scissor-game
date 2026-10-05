@@ -58,7 +58,7 @@ function playGame(playerMove) {
     //show the result here thats while create the localStorage here
     localStorage.setItem("score", JSON.stringify(score));
     document.querySelector(".js-result").innerHTML = result;//because it is result is variable
-    document.querySelector(".js-moves").innerHTML = ` You <img class="move-img" src="images/${playerMove}-emoji.png" alt="" />
+    document.querySelector(".js-moves").innerHTML = ` You <img class="move-img" src="images/${playerMove.toLowerCase()}-emoji.png" alt="" />
     <img class="move-img" src="images/${computerGuess.toLowerCase()}-emoji.png" alt="" /> computer`;
     updatecode();
 
