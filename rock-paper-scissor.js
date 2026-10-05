@@ -59,10 +59,10 @@ function playGame(playerMove) {
     localStorage.setItem("score", JSON.stringify(score));
     document.querySelector(".js-result").innerHTML = result;//because it is result is variable
     document.querySelector(".js-moves").innerHTML = ` You <img class="move-img" src="images/${playerMove}-emoji.png" alt="" />
-    <img class="move-img" src="images/${computerGuess}-emoji.png" alt="" /> computer`;
+    <img class="move-img" src="images/${computerGuess.toLowerCase()}-emoji.png" alt="" /> computer`;
     updatecode();
 
-    //alert(`You picked ${playerMove}. Computer picked ${computerGuess}.${result}
+    //alert(`You picked ${playerMove.toLowerCase()}. Computer picked ${computerGuess}.${result}
     //wins: ${score.wins}, losses: ${score.losses}, ties: ${score.ties}`);
 
 }
