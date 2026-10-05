@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="rock-paper-scissor.css">
+</head>
+
+<body>
+    <p>Rock Paper Scissor</p>
+
+    <button class="move-btn" onclick="
+    playGame('Rock');">
+        <img class="move-img" src="images/rock-emoji.png" alt=""></button>
+
+
+    <button class="move-btn" onclick="
+    playGame('Paper');">
+        <img class="move-img" src="images/paper-emoji.png" alt=""></button>
+
+    <button class="move-btn" onclick="
+   playGame('Scissor');">
+        <img class="move-img" src="images/scissor-emoji.png" alt=""></button>
+    <p class="js-result result"></p>
+    <p class="js-moves moves">
+
+    </p>
+    <p class="js-score score"></p>
+
+    <button class="reset-score-btn" onclick="// remove the localstorage data here 
+    score.wins=0;
+    score.losses=0;
+    score.ties=0;
+    localStorage.removeItem('score');
+    updatecode();
+    ">
+        Reset Score
+    </button>
+    <!--after this it throws the null value because of getItem and remove the all scores-->
+
+
+
+    <script src="rock-paper-scissor.js">
+
+
+    </script>
+
+</body>
+<script> console.log(true && false)</script>
+
+</html>
